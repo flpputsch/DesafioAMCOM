@@ -4,6 +4,8 @@ Implemente uma Web API que permita consultar e listas as 5 Unidades Básicas de 
 
 Você deve carregar um arquivo, disponível no projeto src\AMcom.Teste.DAL, contendo as UBSs e codificar os métodos nas camadas da aplicação, conforme as instruções de cada camada que constam nos arquivos README.md.
 
+**IMPORTANTE: O caminho do arquivo descompactado deve ser informado dentro do Appsettings dentro da camada de WebApi e camada de Service.Tests**
+
 ### Instruções
 
 Para realizar o teste, faça um clone do repositório e após concluída a implementação, subir em um repositório no github ou enviar por e-mail para **selecao@amcom.com.br**. **IMPORTANTE: Se for enviar o projeto por e-mail, remover as pastas `bin` e `obj` de cada projeto e compactar o diretório da solução.**
