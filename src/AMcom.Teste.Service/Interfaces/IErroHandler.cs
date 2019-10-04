@@ -14,5 +14,7 @@ namespace AMcom.Teste.Service.Interfaces
         void AdicionarErro(Exception erro);
 
         void AdicionarErro(string erro);
+
+        List<string> BuscarErros();
     }
 }

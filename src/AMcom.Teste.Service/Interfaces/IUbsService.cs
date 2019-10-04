@@ -5,6 +5,6 @@ namespace AMcom.Teste.Service.Interfaces
 {
     public interface IUbsService
     {
-        List<UbsDTO> Buscar(CoordenadasDTO coordenadas, int quantidadeItens = 5);
+        List<UbsDTO> Buscar(double latitude, double longitude, int quantidadeItens = 5);
     }
 }

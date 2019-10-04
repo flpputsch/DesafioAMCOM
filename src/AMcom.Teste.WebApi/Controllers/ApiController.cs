@@ -17,11 +17,11 @@ namespace AMcom.Teste.WebApi.Controllers
         {
             if (ErroHandler.TemErro())
             {
-                return BadRequest();
+                return BadRequest(ErroHandler.BuscarErros());
             }
             else
             {
-                return Ok(JsonConvert.SerializeObject(data));
+                return Ok(data);
             }
         }
     }

@@ -5,13 +5,13 @@ namespace AMcom.Teste.DAL.Model
     public class Ubs
     {
         [Name("vlr_latitude")]
-        public decimal Latitude { get; set; }
+        public double Latitude { get; set; }
 
         [Name("vlr_longitude")]
-        public decimal Longitude { get; set; }
+        public double Longitude { get; set; }
 
         [Name("nom_estab")]
-        public string Estado { get; set; }
+        public string Nome { get; set; }
 
         [Name("dsc_endereco")]
         public string Endereco { get; set; }

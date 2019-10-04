@@ -17,23 +17,28 @@ namespace AMcom.Teste.WebApi.Controllers
             _ubsService = ubsService;
         }
 
-        [HttpGet("latitude/{latitude:decimal}/longitude/{longitude:decimal}")]
-        public IActionResult Get(decimal latitude, decimal longitude)
+        /// <summary>
+        /// Busca as 5 Ubs mais proximas com melhor nota
+        /// </summary>
+        /// <param name="latitude">Latitude de pesquisa</param>
+        /// <param name="longitude">Longitude de pesquisa</param>
+        /// <returns>Dados das Ubs mais proximas com melhor nota</returns>
+        [HttpGet("latitude/{latitude:double}/longitude/{longitude:double}")]
+        public IActionResult Get(double latitude, double longitude)
         {
             try
             {
-                var dados = _ubsService.Buscar(new CoordenadasDTO(latitude, longitude));
+                //Busca os dados com base na latitude e longitude
+                var dados = _ubsService.Buscar(latitude, longitude);
+                //Retorna os dados que vão ser mostrados caso não tenha erros na sessão
                 return Response(dados);
             }
             catch (Exception e)
             {
+                //Em caso de exceção, da um return que vai buscar os erros da sessão
                 _erroHandler.AdicionarErro(e);
                 return Response();
             }
         }
-
-        // Implemente um método que seja acessível por HTTP GET e retorne a lista das 5 UBSs
-        // (Unidades Básicas de Saúde) mas próximas de um ponto (latitude e longitude) e ordenada
-        // por avaliação (da melhor para a pior). O retorno deve ser no formato JSON.
     }
 }

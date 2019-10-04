@@ -12,10 +12,12 @@ namespace AMcom.Teste.DAL.Model
 
         private static Dictionary<string, UbsAvaliacao> DadosCadastrados()
         {
-            var dados = new Dictionary<string, UbsAvaliacao>();
-            dados.Add("Teste1", UbsAvaliacao.Ruim);
-            dados.Add("Desempenho mediano ou um pouco abaixo da média", UbsAvaliacao.Bom);
-            dados.Add("Teste2", UbsAvaliacao.Excelente);
+            var dados = new Dictionary<string, UbsAvaliacao>
+            {
+                {"Desempenho mediano ou um pouco abaixo da média", UbsAvaliacao.Ruim},
+                {"Desempenho acima da média", UbsAvaliacao.Bom},
+                {"Desempenho muito acima da média", UbsAvaliacao.Excelente}
+            };
 
             return dados;
         }
