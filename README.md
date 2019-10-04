@@ -15,6 +15,7 @@ A solução está divida nas seguintes camadas:
 * Web API - Camada de Web API que deverá expor um método HTTP GET para retornar os dados solicitados no exercício.
 * Services - Camada de lógica de aplicação, que deve ser consumida pela Web API com as regras de negócio do exercício.
 * DAL - Camada de acesso a dados, onde a carga e disponibilização dos dados da aplicação devem ser implementadas.
+* IoC - Camada de registor de injeção de dependencias, onde é relacionado as interfaces com as classes e registrados no container.
 
 A estrutuda da aplicações está conforme abaixo:
 
@@ -23,6 +24,8 @@ src\AMcom.Teste.WebApi
 src\AMcom.Teste.Service
 
 src\AMcom.Teste.DAL
+
+src\AAMcom.Teste.IoC
 
 test\AMcom.Teste.Service.Tests
 
