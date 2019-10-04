@@ -11,7 +11,7 @@ namespace AMcom.Teste.Service.Services
     public class UbsService : IUbsService
     {
         private readonly IUbsRepository _ubsRepository;
-        private readonly IErroHandler _erroHandler;
+        public readonly IErroHandler _erroHandler;
 
         public UbsService(IUbsRepository ubsRepository, IErroHandler erroHandler)
         {

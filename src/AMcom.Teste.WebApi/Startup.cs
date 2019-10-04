@@ -30,8 +30,6 @@ namespace AMcom.Teste.WebApi
                 builder.AddJsonFile($"appsettings.Development.json", optional: true);
             }
 
-            builder.AddEnvironmentVariables();
-
             Configuration = builder.Build();
         }
 

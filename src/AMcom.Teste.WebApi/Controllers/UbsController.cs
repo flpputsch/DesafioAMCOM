@@ -1,7 +1,6 @@
-﻿using System;
-using AMcom.Teste.Service.DTOs;
-using AMcom.Teste.Service.Interfaces;
+﻿using AMcom.Teste.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace AMcom.Teste.WebApi.Controllers
 {
