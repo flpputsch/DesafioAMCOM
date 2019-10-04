@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\AMcom.Teste.DAL\AMcom.Teste.DAL.csproj" />
-    <ProjectReference Include="..\src\AMcom.Teste.Service\AMcom.Teste.Service.csproj" />
+    <ProjectReference Include="..\AMcom.Teste.DAL\AMcom.Teste.DAL.csproj" />
+    <ProjectReference Include="..\AMcom.Teste.Service\AMcom.Teste.Service.csproj" />
   </ItemGroup>
 </Project>
